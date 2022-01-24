@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  border-radius: 92px;
+}
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: linear-gradient(to right, rgb(50, 221, 252), rgb(117, 252, 117));
+}
+.grid-container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+.grid-container > button {
+  font-size: 1.5rem;
+  background-color: black;
+  opacity: 0.7;
+  color: rgb(117, 247, 223);
+  cursor: pointer;
+  border: 1px solid teal;
+}
+.grid-container > button:hover {
+  opacity: 0.8;
+  color: #ff7300;
+}
+.span-two {
+  grid-column: span 2;
+}
+.output {
+  grid-column: 1/-1;
+  background-color: black;
+  opacity: 0.7;
+  border: 2px solid grey;
+  color: rgb(117, 247, 223);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-radius: 12px;
+  border: 3px solid teal;
+}
+.previous-operand {
+  font-size: 1.5rem;
+}
+.current-operand {
+  font-size: 2.5rem;
+}
+.output:hover {
+  color: #ff7300;
+  opacity: 0.8;
+}

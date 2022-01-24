@@ -1,0 +1,20 @@
+html {
+ 2 div for output(previous and current)   
+ button for calculator layout
+}
+css{
+    gradient background
+    grid layout rows and columns
+}
+javascript {
+     using jquery data-operations
+     class called calculatort for constructor
+     alloperations defined(if and else used)// switch case
+     clear
+     delete 
+     append number
+     compute funtion
+   <  updatedisplay>
+      
+      
+}
